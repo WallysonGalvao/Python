@@ -144,3 +144,70 @@ print("Make an algorithm that read the employee's salary and show its new salary
 salaryOfEmployee = float(input("What is the employee's salary ? $"))
 newSalary = salaryOfEmployee + (salaryOfEmployee * 15 / 100)
 print("An employee earning ${}, with a 15% raise, is getting ${}".format(salaryOfEmployee, newSalary))
+
+# Challenge 014
+# Write a program that convert a temperature typed in ºC and convert for ºF.
+print("Challenge 014")
+print("Write a program that convert a temperature typed in ºC and convert for ºF.")
+temperatureCelsius = float(input("Enter the temperature in °C: "))
+temperatureFahrenheit = ((9 * temperatureCelsius) / 5) + 32
+print("The temperature of {}ºC corresponds {}ºF!".format(temperatureCelsius, temperatureFahrenheit))
+
+# Challenge 015
+# Write a program that asks the number of miles traveled by a rental car and the number of days it was rented
+# Calculate the price to pay, knowing that the car costs $ 60 per day and $ 0.15 per kilometer wheeled.
+print("Challenge 015")
+print("Write a program that asks the number of miles traveled by a rental car and the number of days it was rented ")
+print("Calculate the price to pay, knowing that the car costs $ 60 per day and $ 0.15 per kilometer wheeled.")
+daysRented = int(input("How many rented days ? "))
+KmWheeled = float(input("How many KM's rolled ? "))
+totalToPay = (daysRented * 60) + (KmWheeled * 0.15)
+print("The total to pay is ${:.2f}".format(totalToPay))
+
+# Challenge 016
+# Create a program that read a any number and show on the screen its integer portion.
+print("Challenge 016")
+print("Create a program that read a any number and show on the screen its integer portion.")
+value = float(input("Enter a value: "))
+portion = round(value)
+print("The value typed was {} and its integer portion is {}".format(value, portion))
+
+from math import hypot
+# Challenge 017
+# Make a program that measures the length of the opposite leg and the adjunct leg of the triangle,
+# calculate and show the length of the hypotenuse.
+print("Challenge 017")
+print("Make a program that measures the length of the opposite leg and the adjunct leg of the triangle, ")
+print("calculate and show the length of the hypotenuse. ")
+oppositeLeg = float(input("Length of opposite leg: "))
+adjacentLeg = float(input("Adjacent leg length: "))
+hypotenuse = hypot(oppositeLeg, adjacentLeg)
+print("The hypotenuse will measure {:.2f}".format(hypotenuse))
+
+from math import sin, cos, tan, radians
+# Challenge 018
+# Make a program that reads any angle and shows on the screen the sine, cosine, and tangent value of that angle.
+print("Challenge 018")
+print("Make a program that reads any angle and shows on the screen the sine, cosine, and tangent value of that angle.")
+angle = float(input("Enter the angle you want: "))
+sine = sin(radians(angle))
+cosine = cos(radians(angle))
+tangent = tan(radians(angle))
+print("The angle of {} has the sine of {:.2f} ".format(angle, sine))
+print("The angle of {} has the cosine of {:.2f} ".format(angle, cosine))
+print("The angle of {} has the tangent of {:.2f} ".format(angle, tangent))
+
+import random
+# Challenge 019
+# A teacher wants to draw one of his four students to erase the blackboard.
+# Make a program that will help him by reading their name and writing the name of the chosen one.
+print("Challenge 019")
+print("A teacher wants to draw one of his four students to erase the blackboard.")
+print("Make a program that will help him by reading their name and writing the name of the chosen one.")
+firstStudent = input("First student: ")
+secondStudent = input("Second student: ")
+thirdStudent = input("Third student: ")
+fourthStudent = input("Fourth student: ")
+students = [firstStudent, secondStudent, thirdStudent, fourthStudent]
+selectedStudent = random.choice(students)
+print("The student chosen was {} ".format(selectedStudent))
