@@ -26,4 +26,4 @@ print("{} x {:2} = {}".format(number, 7, multipliedBySeven))
 print("{} x {:2} = {}".format(number, 8, multipliedByEight))
 print("{} x {:2} = {}".format(number, 9, multipliedByNine))
 print("{} x {:2} = {}".format(number, 10, multipliedByTen))
-print("============="
+print("=============")
