@@ -8,4 +8,4 @@
 
 ### Python 3: Introdução a Orientação a Objetos
 
-### Django: Programação Web com Python e simplicidade
+### Django: Programação Web com Python e simplicidade 
