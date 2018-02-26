@@ -9,3 +9,5 @@
 ### Python 3: Introdução a Orientação a Objetos
 
 ### Django: Programação Web com Python e simplicidade 
+
+### Design Patterns Python I: Boas práticas de programação 
